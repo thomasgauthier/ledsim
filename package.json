@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/dev.mjs",
+    "build": "pnpm build:sketch && vite build",
+    "build:sketch": "node tools/build-sketch.mjs",
+    "setup:emscripten": "node tools/setup-emscripten.mjs",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "p5": "^2.3.3"
+  }
+}
